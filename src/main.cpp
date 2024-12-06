@@ -98,11 +98,9 @@ void opcontrol() {
 		}
 
 		if (controller[okapi::ControllerDigital::R1].isPressed()) {
-			manipulator.controllerSet(1);
-		} else if (controller[okapi::ControllerDigital::R2].isPressed()) {
-			manipulator.controllerSet(-1);
-		} else {
-			manipulator.controllerSet(0);
+			manipulator.moveVoltage(12000);
+		}else {
+			manipulator.moveVoltage(0);
 		}
 
 		rate.delay(100_Hz);
