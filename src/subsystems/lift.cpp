@@ -1,4 +1,4 @@
-#include "subsystems/lift.hpp"
+#include "Subsystems/lift.hpp"
 
 const int8_t liftPort = 0;
 
