@@ -98,7 +98,7 @@ void opcontrol() {
 		}
 
 		if (controller[okapi::ControllerDigital::R1].isPressed()) {
-			manipulator.moveRelative(180, okapi::encoderUnits::degrees);
+			manipulator.moveRelative(180, 200);
 		}
 
 		rate.delay(100_Hz);
